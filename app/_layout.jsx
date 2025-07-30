@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { StatusBar } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 export default function RootLayout() {
   return (
@@ -8,17 +8,10 @@ export default function RootLayout() {
       <Stack
         screenOptions={{
           headerStyle: { backgroundColor: "#E94560" },
-          headerTintColor: "#fff",
+          headerTintColor: "#FFFFFF",
         }}
       >
-        <Stack.Screen name="index" options={{ headerTitle: "Home" }} />
-        <Stack.Screen name="settings" options={{ title: "Settings" }} />
-        <Stack.Screen name="user" options={{ title: "User" }} />
-        <Stack.Screen name="products" options={{ title: "Products" }} />
-        <Stack.Screen
-          name="products/[id]"
-          options={{ title: "Product Detail" }}
-        />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" options={{ title: "Not Found" }} />
       </Stack>
     </>

@@ -1,7 +1,7 @@
 import { FontAwesome } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
 import { Pressable, Text, View } from "react-native";
-import styles from "../../styles/styles";
+import styles from "../../../styles/styles";
 export default function ProductsDetail() {
   const { id } = useLocalSearchParams();
   const goBack = () => {
